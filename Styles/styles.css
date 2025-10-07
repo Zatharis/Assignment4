@@ -5,26 +5,37 @@
 
 
 header {
-    background-color:navy;
+    background-color: rgb(78, 0, 78);
     color:white;
     padding: 10px;
     text-align: center;
-    align-self: flex-start | center;
+    align-self: flex-start, center;
 }
 
 article {
-    background-color: aqua;
+    background-color: darkgrey;
 }
 
 article:nth-of-type(3) {
     align-self: flex-end;
 }
 article:nth-of-type(3) img{
-    width: 50px;
+    width: 25px;
     float: left;
+}
+
+header, body{
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 body {
     display: flex;
     flex-wrap: wrap;
+    background-color: purple;
+}
+article li{
+    flex-direction: column;
+    text-align: left;
+    padding: 30px 0 0 30px;
 }
